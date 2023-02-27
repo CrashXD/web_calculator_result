@@ -1,0 +1,101 @@
+.button {
+    // height: 92px;
+    aspect-ratio: 1 / 1;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-button-text;
+    background-color: $color-button-light;
+    transition: .2s;
+    cursor: pointer;
+
+    svg {
+        width: 28px;
+        height: 28px;
+        fill: $color-button-text;
+    }
+
+    &_text-primary {
+        color: $color-button-text-primary;
+
+        svg {
+            fill: $color-button-text-primary;
+        }
+    }
+
+    @include not-tablet() {
+        &:hover {
+            background-color: $color-button-light-hover;
+        }
+
+        &:active {
+            background-color: $color-button-light-active;
+        }
+    }
+
+    @include tablet() {
+        &:active {
+            background-color: $color-button-light-hover;
+        }
+    }
+
+    &_dark {
+        background-color: $color-button-dark;
+
+        @include not-tablet() {
+            &:hover {
+                background-color: $color-button-dark-hover;
+            }
+
+            &:active {
+                background-color: $color-button-dark-active;
+            }
+        }
+
+        @include tablet() {
+            &:active {
+                background-color: $color-button-dark-hover;
+            }
+        }
+
+    }
+
+    &_primary {
+        background-color: $color-button-primary;
+
+        @include not-tablet() {
+            &:hover {
+                background-color: $color-button-primary-hover;
+            }
+
+            &:active {
+                background-color: $color-button-primary-active;
+            }
+        }
+
+        @include tablet() {
+            &:active {
+                background-color: $color-button-primary-hover;
+            }
+        }
+
+    }
+
+    &_border-smooth-left-top {
+        border-radius: 30px 0 0 0;
+    }
+
+    &_border-smooth-right-top {
+        border-radius: 0 30px 0 0;
+    }
+
+    &_border-smooth-left-bottom {
+        border-radius: 0 0 0 30px;
+    }
+
+    &_border-smooth-right-bottom {
+        border-radius: 0 0 30px 0;
+    }
+}

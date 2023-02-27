@@ -1,0 +1,38 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    row-gap: 8px;
+    color: $color-text-muted;
+    font-size: 18px;
+
+    &__operation, &__result {
+        line-height: 100%;
+    }
+
+    &_current {
+        row-gap: 12px;
+        color: $color-text;
+
+        .history__operation {
+            font-size: 24px;
+            transition: .2s;
+        }
+
+        .history__result {
+            font-size: 52px;
+            transition: .2s;
+        }
+    }
+
+    &_in-process {
+        .history__operation {
+            font-size: 52px;
+        }
+
+        .history__result {
+            font-size: 24px;
+            color: $color-text-muted;
+        }
+    }
+}

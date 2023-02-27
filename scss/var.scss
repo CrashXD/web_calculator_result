@@ -1,0 +1,32 @@
+// Main colors
+$color-white: #fff;
+$color-black: #242530;
+$color-primary: #FFBB00;
+$color-primary-hover: #E5A800;
+$color-primary-active: #CC9600;
+$color-muted: #878787;
+$color-default: #363746;
+$color-default-hover: #414353;
+$color-default-active: #4C4E62;
+$color-secondary: #2E2F3E;
+$color-secondary-hover: #383A4C;
+$color-secondary-active: #43455B;
+
+// Elements colors
+$color-background: $color-black;
+$color-text: $color-white;
+$color-text-muted: $color-muted;
+$color-button-text: $color-white;
+$color-button-text-primary: $color-primary;
+$color-button-light: $color-default;
+$color-button-light-hover: $color-default-hover;
+$color-button-light-active: $color-default-active;
+$color-button-dark: $color-secondary;
+$color-button-dark-hover: $color-secondary-hover;
+$color-button-dark-active: $color-secondary-active;
+$color-button-primary: $color-primary;
+$color-button-primary-hover: $color-primary-hover;
+$color-button-primary-active: $color-primary-active;
+
+// Numbers
+$width-wrapper: 375px;

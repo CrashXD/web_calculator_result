@@ -1,0 +1,10 @@
+@import "reset"; // сброс
+@import "var"; // переменные
+@import "mixin"; // миксины
+@import "fonts"; // шрифты
+@import "common"; // общие стили
+
+@import "button/button"; // кнопка
+@import "keyboard/keyboard"; // клавиатура
+@import "screen/screen"; // экран
+@import "history/history"; // строка результатов

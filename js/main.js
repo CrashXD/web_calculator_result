@@ -424,7 +424,6 @@ function checkFontSizeForHistories() {
             element.style.fontSize = '';
             let elementSourceFontSize = parseInt(getComputedStyle(element)['font-size']);
             // если установленный размер меньше чем исходный, то оставляем инлайн
-            console.log(elementInlineFontSize, elementSourceFontSize);
             if (elementInlineFontSize < elementSourceFontSize)
                 element.style.fontSize = elementInlineFontSize + 'px';
         }

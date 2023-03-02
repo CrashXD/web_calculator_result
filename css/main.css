@@ -480,10 +480,12 @@ body {
 .history {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   text-align: right;
   row-gap: 8px;
   color: #878787;
   font-size: 18px;
+  width: 100%;
 }
 .history__operation, .history__result {
   line-height: 100%;
@@ -494,11 +496,9 @@ body {
 }
 .history_current .history__operation {
   font-size: 24px;
-  transition: 0.2s;
 }
 .history_current .history__result {
   font-size: 52px;
-  transition: 0.2s;
 }
 .history_in-process .history__operation {
   font-size: 52px;
